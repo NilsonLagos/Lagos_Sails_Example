@@ -1,0 +1,72 @@
+<script src="/js/1jquery-3.2.1.js"></script>
+<form action="/contactos/update/<%=contacto.id%>" method="POST">
+  <div class="data-fluid">
+    <div class="row">
+
+      <input type="hidden" id="uiIdContacto" />
+
+
+      <div class="col-md-2">Nombre</div>
+      <div class="col-md-2">
+        <input type="text" class="form-control validate[required]" name="nombre" value="<%=contacto.nombre%>"  autofocus />
+      </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col-md-2">Telefono Celular</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonocel" value="<%=contacto.telefonocel%>" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">Telefono Casa</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonocasa"  value="<%=contacto.telefonocasa%>" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">Telefono Trabajo</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonotrabajo" value="<%=contacto.telefonotrabajo%>" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1">Correo</div>
+      <div class="col-md-3">
+        <input type="text" class="form-control validate[required]" name="correo" value="<%=contacto.correo%>" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="hidden" id="idTipoContacto" value="<%=contacto.idtipocontacto%>"/>
+      <div class="col-md-1">Tipo</div>
+      <div class="col-md-3">
+        <select name="combotipo">
+
+          <option value="1" <% if(contacto.idtipocontacto==1){%> selected="selected" <%}%> >Cliente</option>
+          <option value="2" <% if(contacto.idtipocontacto==2){%> selected="selected" <%}%> >Propietario</option>
+          <option value="3" <% if(contacto.idtipocontacto==3){%> selected="selected" <%}%> >Corredor</option>
+
+        </select>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <!--<button type="button" id="agregarbtn">Agregar</button>-->
+        <input type="submit" value="editar"/>
+      </div>
+    </div>
+  </div>
+</form>
+<script>
+  $( document ).ready(function() {
+
+
+
+  });
+</script>

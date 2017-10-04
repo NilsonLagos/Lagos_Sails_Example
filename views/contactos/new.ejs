@@ -1,0 +1,65 @@
+<form action="agregar" method="post">
+  <div class="data-fluid">
+    <div class="row">
+
+      <input type="hidden" id="uiIdContacto" />
+
+
+      <div class="col-md-2">Nombre</div>
+      <div class="col-md-2">
+        <input type="text" class="form-control validate[required]" name="nombre"  autofocus />
+      </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col-md-2">Telefono Celular</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonocel" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">Telefono Casa</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonocasa" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">Telefono Trabajo</div>
+      <div class="col-md-2">
+        <input type="number" class="form-control" name="telefonotrabajo" autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1">Correo</div>
+      <div class="col-md-3">
+        <input type="text" class="form-control validate[required]" name="correo"autofocus />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1">Tipo</div>
+      <div class="col-md-3">
+        <select name="idtipocontacto">
+          <option value="1">Cliente</option>
+          <option value="2">Propietario</option>
+          <option value="3">Corredor</option>
+
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <!--<button type="button" id="agregarbtn">Agregar</button>-->
+        <input type="submit" value="agregar"/>
+      </div>
+    </div>
+  </div>
+
+</form>
+<script>
+
+</script>

@@ -1,0 +1,30 @@
+<h3>Contactos</h3>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Celular</th>
+    <th>Casa</th>
+    <th>Trabajo</th>
+    <th>Correo</th>
+    <th>Tipo Contacto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% listacontactos.forEach(function (contacto) { %>
+    <tr data-id="<%=contacto.id%>" data-model="contactos">
+      <td><%=contacto.Nombre%></td>
+      <td><%=contacto.TelefonoCel%></td>
+      <td><%=contacto.TelefonoCasa%></td>
+      <td><%=contacto.TelefonoTrabajo%></td>
+      <td><%=contacto.Correo%></td>
+      <td><%=contacto.IdTipoContacto%></td>
+      <td><a href="/contactos/edit/<%=contacto.id%>">Edit</a></td>
+      <td><a href="/contactos/delete/<%=contacto.id%>">Delete</a></td>
+
+    </tr>
+  <%})%>
+</table>
+<script>
+
+</script>
